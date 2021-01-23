@@ -23,3 +23,6 @@ fun sampleApiTest() {
     assertEquals("Success", response.element("message"))
 }
 ```
+
+## License
+The API Testing Framework is released under version 2.0 of the [Apache License][license].
