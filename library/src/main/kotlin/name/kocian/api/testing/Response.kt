@@ -4,6 +4,7 @@ import kotlinx.serialization.json.JsonObject
 
 class Response {
 
+    @Suppress("FunctionOnlyReturningConstant")
     fun element(vararg name: Any): String {
         // TODO Parse response and return element
         return "Success"

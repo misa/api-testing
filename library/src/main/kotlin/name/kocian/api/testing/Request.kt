@@ -22,6 +22,7 @@ class Request(
         return this
     }
 
+    @Suppress("MagicNumber")
     fun execute(): Response {
         println("<<< Request: $method /$uri")
         println("Headers: $headers")
