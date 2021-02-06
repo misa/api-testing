@@ -1,5 +1,5 @@
 object Version {
-    const val kotlin = "1.4.21"
+    const val kotlin = "1.4.30"
 
     object Dependency {
         const val kotlinSerialisation = "1.0.1"
