@@ -54,7 +54,7 @@ class GetRequestTest {
         assertEquals("GET", request.method)
         assertEquals("/login", request.path)
         assertEquals(5, request.headers.size)
-        assertEquals("SampleValue", request.headers.get("SampleHeader"))
+        assertEquals("SampleValue", request.headers["SampleHeader"])
 
         assertEquals(200, response.code)
         assertEquals(null, response.body)
