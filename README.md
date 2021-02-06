@@ -6,7 +6,7 @@ Kotlin helpers for API testing
 @Test
 fun sampleApiTest() {
     
-    val response = api("v1/example", POST)
+    val response = Request(POST, hostname + "login")
         .headers(
             "sample" to "test"
         )
@@ -19,8 +19,8 @@ fun sampleApiTest() {
     // API response body
     // { "message": "Success" }
     
-    assertEquals(201, response.code)
-    assertEquals("Success", response.element("message"))
+    assertEquals(200, response.code)
+    assertEquals("Success", response.valueOf("message"))
 }
 ```
 
