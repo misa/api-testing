@@ -3,7 +3,7 @@ object Version {
 
     object Dependency {
         const val kotlinSerialisation = "1.0.1"
-        const val okhttp = "4.9.0"
+        const val okhttp = "4.9.1"
     }
 
     object Test {
