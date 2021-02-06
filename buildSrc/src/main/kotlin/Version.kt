@@ -7,6 +7,6 @@ object Version {
     }
 
     object Test {
-        const val junit5 = "5.7.0"
+        const val junit5 = "5.7.1"
     }
 }
