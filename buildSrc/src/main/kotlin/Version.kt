@@ -8,5 +8,6 @@ object Version {
 
     object Test {
         const val junit5 = "5.7.1"
+        const val cucumber = "6.9.1"
     }
 }
