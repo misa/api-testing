@@ -1,7 +1,8 @@
 package name.kocian.api.testing
 
+import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
-import kotlinx.serialization.json.JsonObject
+import kotlinx.serialization.json.JsonElement
 import okhttp3.Headers.Companion.toHeaders
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
@@ -50,7 +51,7 @@ object NetworkClient {
             body = if (responseBody.isNullOrBlank()) {
                 null
             } else {
-                Json.parseToJsonElement(responseBody) as JsonObject
+                Json.decodeFromString<JsonElement>(responseBody)
             }
         }
     }

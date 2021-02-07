@@ -17,7 +17,7 @@ class Response {
     lateinit var original: Response
 
     var code: Int = 0
-    var body: JsonObject? = null
+    var body: JsonElement? = null
 
     @Suppress("ReturnCount")
     fun valueOf(vararg name: Any): Any {
