@@ -10,10 +10,12 @@ class SampleSteps : En {
 
     init {
         Given("Underground status is available") {
+            // No-op
         }
 
         When("I get current status") {
-            val result = Request(HttpMethod.GET, "https://api.tfl.gov.uk/line/mode/tube/status").execute()
+            val result = Request(HttpMethod.GET, "https://api.tfl.gov.uk/line/mode/tube/status")
+                .execute()
 
             assertEquals("Bakerloo", result.valueOf(1, "name"))
 
