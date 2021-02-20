@@ -2,7 +2,7 @@ object Version {
     const val kotlin = "1.4.30"
 
     object Dependency {
-        const val kotlinSerialisation = "1.0.1"
+        const val kotlinSerialisation = "1.1.0"
         const val okhttp = "4.9.1"
     }
 
