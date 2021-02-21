@@ -6,7 +6,7 @@ import org.junit.Assert.assertEquals
 
 var linesAvailable: Int = 0
 
-class SampleSteps : En {
+class SampleStep : En {
 
     init {
         Given("Underground status is available") {

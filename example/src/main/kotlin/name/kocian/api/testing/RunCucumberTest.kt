@@ -6,7 +6,7 @@ import org.junit.runner.RunWith
 
 @CucumberOptions(
     glue = ["name.kocian.api.testing"],
-    features = ["src/test/resources/features"]
+    features = ["classpath:/features"]
 )
 @RunWith(Cucumber::class)
 class RunCucumberTest

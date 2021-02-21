@@ -6,7 +6,7 @@ import org.junit.Assert.assertEquals
 
 private const val HOST = "https://restcountries.eu/rest/v2/"
 
-class CountriesSteps : En {
+class CountriesStep : En {
 
     var countriesFound: Int? = 0
     var countryName: String = ""
